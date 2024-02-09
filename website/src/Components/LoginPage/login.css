@@ -1,0 +1,19 @@
+
+@font-face {
+    font-family: 'inter';
+    src: url('C:/Users/hsand/Downloads/static/Inter-Regular.ttf') format('truetype');
+  }
+
+.login-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form{
+  background-color: aquamarine;
+  padding: 20px;
+  align-items: center;
+}
+
