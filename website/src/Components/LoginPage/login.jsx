@@ -1,42 +1,47 @@
 import React, { useState } from 'react';
-import './login.css';
+import './login.css'; // Import the CSS file
+import loginImage from './logo1.png';
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');
-  const [password, setpassword] = useState('');
-const hanldeLogin = () => { 
-  console.log('Username ', username);
-  console.log('Password ', password);
+  const [password, setPassword] = useState('');
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    console.log('Logging in with username:', username, 'and password:', password);
+  };
+
+  return (
+      <div className="login-page-container">
+        <img src={loginImage} alt="Login" className="login-image" /> {/* Image added here */}
+        <div className="login-page">
+          <h2>Login</h2>
+          <form onSubmit={handleLogin}>
+            <div className="form-group">
+              <label htmlFor="username">Username:</label>
+              <input
+                  type="text"
+                  id="username"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="password">Password:</label>
+              <input
+                  type="password"
+                  id="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+              />
+            </div>
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+  );
 };
 
-
-return(
- <div>
-  <img src='C:\Users\hsand\Desktop\website\website\logo1.jpg' alt='cclogo' />
-  <div className='login-container'>
-  <form className='login-form' onSubmit={(e) => e.preventDefault()}>
-    <div className='login-text'>
-      <h2>LOGIN</h2>
-    </div>
-    <input 
-      type="text"
-      placeholder="Username"
-      value={username}
-      onChange={(e) => setUsername(e.target.value)}
-      />
-    <input 
-      type="password"
-      placeholder="password"
-      value={password}
-      onChange={(e) => setpassword(e.target.value)}
-      />
-      <button type="submit" onClick={hanldeLogin}>
-        Login
-      </button>
-    </form>
-   </div> 
- </div> 
-);
-};
 export default LoginPage;
-

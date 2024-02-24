@@ -1,54 +1,59 @@
-
-@font-face {
-    font-family: 'inter';
-    src: url('C:/Users/hsand/Downloads/static/Inter-Regular.ttf') format('truetype');
-  }
-
-.login-container{
-  display: flex;
-  justify-content: right;
-  align-items: right;
+.login-page-container {
+  font-family: "SF Pro Display";
+  position: fixed;
+  top: 50%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  width: 400px; /* Adjust the width as needed */
+  padding-top: 300px;
+  padding-bottom: 300px;
+  padding-right: 60px;
+  padding-left: 50px;
+  background-color: rgba(121, 97, 148, 0.85);
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.login-text{
-  font-size: x-large;
-  font-family: inter;
-  text-align: center;
-  font-weight: lighter;
+.login-page {
+  width: 100%;
 }
 
-.login-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(97, 35, 35);
-  padding: 250px;
+.login-image {
+  position: absolute;
+  top: 50%;
+  left: -90px; /* Adjust the position of the image as needed */
+  transform: translateY(-50%);
+  width: 80px; /* Adjust the width of the image as needed */
+  height: auto;
 }
 
-.login-form input {
-  width: 150%;
+.form-group {
   margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  font-family: inter;
-  align-items: center;
 }
 
-.login-form button {
-  width: 50%;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  background-color: red;
-  color: #fff;
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+}
+
+button {
+  background-color: #007bff;
+  font-family: "SF Pro Display";
+  color: #ffffff;
   border: none;
-  border-radius: 10px;
+  border-radius: 9px;
+  padding: 9px 19px;
   cursor: pointer;
-  font-family: inter;
 }
 
-.login-form button:hover {
-  background-color: rgb(16, 16, 16);
+button:hover {
+  background-color: #0056b3;
 }
