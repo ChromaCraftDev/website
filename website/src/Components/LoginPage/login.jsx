@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import './login.css'; // Import the CSS file
-import loginImage from './logo1.png';
+import './login.css';
+import loginImage from './logo.PNG';
+import loginImage2 from './logo2.PNG';
+import {FaFacebook, FaGoogle, FaApple} from 'react-icons/fa';
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');
@@ -12,12 +14,13 @@ const LoginPage = () => {
   };
 
   return (
-      <div className="login-page-container">
-        <img src={loginImage} alt="Login" className="login-image" /> {/* Image added here */}
-        <div className="login-page">
+      <div className={"login-page-container"}>
+        <img src={loginImage} alt="Login" className="login-image"/>
+        <img src={loginImage2} alt="Login2" className="login-image2"/>
+        <div className={"login-page"}>
           <h2>Login</h2>
           <form onSubmit={handleLogin}>
-            <div className="form-group">
+            <div className={"form-group"}>
               <label htmlFor="username">Username:</label>
               <input
                   type="text"
@@ -27,7 +30,7 @@ const LoginPage = () => {
                   required
               />
             </div>
-            <div className="form-group">
+            <div className={"form-group"}>
               <label htmlFor="password">Password:</label>
               <input
                   type="password"
@@ -38,6 +41,21 @@ const LoginPage = () => {
               />
             </div>
             <button type="submit">Login</button>
+            <button type="submit">Create an account</button>
+            <div className={"social-login"}>
+              <p>Or sign in with</p>
+              <div className={"social-icons"}>
+                <a href={"fb"} className={"social-icon1"}>
+                  <FaFacebook/>
+                </a>
+                <a href={"google"} className={"social-icon2"}>
+                  <FaGoogle/>
+                </a>
+                <a href={"apple"} className={"social-icon3"}>
+                  <FaApple/>
+                </a>
+              </div>
+            </div>
           </form>
         </div>
       </div>
@@ -45,3 +63,5 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
+
+
