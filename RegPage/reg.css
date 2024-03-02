@@ -1,0 +1,89 @@
+.login-page-container {
+    font-family: "SF Pro Display";
+    color: #000000;
+    position: fixed;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    padding-right: 200px;
+    padding-left: 130px;
+    background-color: rgba(121, 97, 148, 0.85);
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-page {
+    width: 100%;
+}
+
+.login-image {
+    position: absolute;
+    top: 50%;
+    left: -1000px;
+    transform: translateY(-50%);
+    width: 600px;
+    height: auto;
+}
+
+.login-image2 {
+    position: absolute;
+    top: 10%;
+    left: -20px;
+    transform: translateY(-50%);
+    width: 300px;
+    height: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='password'] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+}
+
+button {
+    background-color: #007bff;
+    margin: 30px auto;
+    font-family: "SF Pro Display";
+    color: #ffffff;
+    border: none;
+    border-radius: 9px;
+    padding: 9px 19px;
+    cursor: pointer;
+    display: block;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.social-login {
+    font-size: x-large;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.social-icons a {
+    color: white; 
+    font-size: 24px;
+}

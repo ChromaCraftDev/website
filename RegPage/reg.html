@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reg.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Login Page</title>
 </head>
 <body>
 <div id="root" class="login-page-container">
-    <img src="img/logo.PNG" alt="Login" class="login-image">
-    <img src="img/logo2.PNG" alt="Login2" class="login-image2">
+    <img src="logoreg1.png" alt="Login" class="login-image">
+    <img src="logoreg2.png" alt="Login2" class="login-image2">
     <div class="login-page">
         <h2>Login</h2>
         <form id="loginForm">
+            <div class="form-group">
+                <label for="email">E-mail Address:</label>
+                <input type="text" id="email" required>
+            </div>
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" id="username" required>
@@ -21,19 +26,22 @@
                 <label for="password">Password:</label>
                 <input type="password" id="password" required>
             </div>
-            <button type="submit" id="loginButton">Login</button>
+            <div class="form-group">
+                <label for="confirmpassword">Confirm Password:</label>
+                <input type="password" id="confirmpassword" required>
+            </div>
             <button type="button" id="createAccountButton">Create an account</button>
             <div class="social-login">
                 <p>Or sign in with</p>
                 <div class="social-icons">
-                    <a href="fb" class="social-icon1">Facebook</a>
-                    <a href="google" class="social-icon2">Google</a>
-                    <a href="apple" class="social-icon3">Apple</a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-google"></i></a>
+                    <a href="#"><i class="fa fa-apple"></i></a>
                 </div>
             </div>
         </form>
     </div>
 </div>
-<script src="script.js"></script>
+<script src="regscript.js"></script>
 </body>
 </html>

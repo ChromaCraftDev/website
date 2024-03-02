@@ -72,6 +72,7 @@ button:hover {
 
 .social-login {
     font-size: x-large;
+    flex-direction: column;
     color: white;
     justify-content: center;
     text-align: center;
@@ -80,15 +81,9 @@ button:hover {
 .social-icons {
     display: flex;
     justify-content: center;
+    gap: 25px;
 }
-
-.social-icon1, .social-icon2, .social-icon3 {
-    text-align: center;
-    display: inline-block;
-    margin-right: 10px;
-    color: #ffffff;
-    padding: 10px;
-    width: 50px;
-    height: auto;
-    font-size: x-large;
+.social-icons a {
+    color: white; 
+    font-size: 24px;
 }
