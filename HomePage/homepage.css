@@ -8,7 +8,7 @@ body {
 
 /* Style the header element */
 .header {
-    padding: 80px;
+    padding: 100px;
     background-color: #cc91f1;
     color: #333; /* Change text color to dark */
 }
@@ -53,8 +53,9 @@ body {
     width: 40%;
     height: 300px;
     border: 1px solid black;
+    color: #000;
     margin: 10px;
-    background-color: white;
+    background-image: url("img/themes.jpg");
 }
 
 /* Style the fonts panel */
@@ -62,8 +63,9 @@ body {
     width: 40%;
     height: 300px;
     border: 1px solid black;
+    color: #fff;
     margin: 10px;
-    background-color: white;
+    background-image: url("img/font.jpg");
 }
 
 /* Style the colors row */
