@@ -4,6 +4,7 @@ body {
     text-align: center;
     background-color: #ffffff;
     color: #333; /* Change text color to dark */
+    padding-left: 200px;
 }
 
 /* Style the header element */
@@ -11,12 +12,32 @@ body {
     padding: 100px;
     background-color: #cc91f1;
     color: #333; /* Change text color to dark */
+    object-fit: contain;
+
 }
 
 /* Style the navigation bar */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #e0c5c5;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar .logonav{    width: 100%;
+    height: auto;
 }
 
 /* Style the navigation links */
@@ -25,7 +46,7 @@ body {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px;
     text-decoration: none;
 }
 
@@ -56,16 +77,33 @@ body {
     color: #000;
     margin: 10px;
     background-image: url("img/themes.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+
+.themes h2{
+    font-size: 50px;
+    font-family: "Inter", sans-serif;
+}
+
 
 /* Style the fonts panel */
 .fonts {
     width: 40%;
     height: 300px;
     border: 1px solid black;
-    color: #fff;
+    color: #000;
     margin: 10px;
-    background-image: url("img/font.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fonts h2{
+    font-size: 50px;
+    font-family: "Inter", sans-serif;
 }
 
 /* Style the colors row */
