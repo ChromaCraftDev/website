@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'CustomFont';
-  src: url('./inter.ttf') format('truetype'); /* adjust the path and format based on your font file */
+  src: url('./inter.ttf') format('truetype'); 
 }
 
 body {
-  font-family: 'CustomFont'; /* Use the custom font */
+  font-family: 'CustomFont'; 
   margin: 0;
   padding: 0;
   background-color: #f8f9fa;
@@ -17,35 +17,35 @@ header {
   color: white;
   padding: 20px;
   text-align: center;
-  padding-top: 50px; /* Add padding to the top of the header */
-  padding-bottom: 50px; /* Add padding to the bottom of the header */
-  font-size: x-large; /* Increase font size for the header */
+  padding-top: 50px; 
+  padding-bottom: 50px; 
+  font-size: x-large; 
 }
 
 header p {
-  font-size: 16px; /* Set font size for the description */
-  margin-top: 10px; /* Add margin to the top of the description */
+  font-size: 16px; 
+  margin-top: 10px; 
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px; /* Add padding to the container */
+  padding: 50px;
 }
 
 .card {
   width: 300px;
   padding: 20px;
-  margin-bottom: 20px; /* Add margin between cards */
-  border-radius: 8px;
+  margin-bottom: 20px; 
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  border-radius: 10px;
 }
 
 .card:hover {
-  transform: scale(1.1); 
+  transform: scale(1.2); 
 }
 
 .card h3 {
@@ -59,11 +59,27 @@ header p {
   color: #000000;
 }
 
+/* Hide the image by default */
+.product .product-image,
+.theme .theme-image {
+  width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show the image when hovering over the card */
+.product:hover .product-image,
+.theme:hover .theme-image {
+  opacity: 1;
+}
+
 .products {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* Add gap between cards */
+  gap: 20px; 
 }
 
 .products h2{
@@ -82,7 +98,7 @@ header p {
   border-radius: 5%; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   transition: transform 0.3s ease; 
-  padding-top: 30px; /* Add padding to the top of the image */
+  padding-top: 30px; 
 }
 
 .example-image:hover {
@@ -104,3 +120,43 @@ header p {
   background-color: #0056b3;
 }
 
+/* Dark mode styles */
+
+.dark-mode .App {
+  background-color: #000000; /* Dark mode background color */
+}
+
+.dark-mode header {
+  background-color: #000000; /* Dark mode header background color */
+  color: #ffffff; /* Dark mode header text color */
+}
+
+.dark-mode .card {
+  background-color: #000000; /* Dark mode card background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .card:hover {
+  transform: scale(1.05);
+}
+
+.dark-mode .card h3,
+.dark-mode .card p {
+  color: #fff; /* Dark mode card text color */
+}
+
+.dark-mode .products:nth-child(odd) .card {
+  background-color: #000000; /* Dark mode alternate card background color */
+}
+
+.dark-mode .downloadBtn {
+  background-color: #007bff; /* Dark mode button background color */
+}
+.toggle-dark-mode {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  font-family: 'CustomFont';
+  border-radius: 10px;
+}

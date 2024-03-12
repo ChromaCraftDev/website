@@ -1,7 +1,6 @@
-import React from 'react';
-import './App.css'; // Import CSS file
+import React, { useState } from 'react';
+import './App.css'; // Import your CSS file
 import exampleImage from './Images/sample.jpg';
-
 
 function Product({ name, description }) {
   const downloadFont = () => {
@@ -13,6 +12,7 @@ function Product({ name, description }) {
     <div className="card product">
       <h3>{name}</h3>
       <p>{description}</p>
+      <img src={exampleImage} alt="product" className="product-image" />
       <button className="downloadBtn" onClick={downloadFont}>Download</button>
     </div>
   );
@@ -20,6 +20,7 @@ function Product({ name, description }) {
 
 function Theme({ name, description }) {
   const downloadTheme = () => {
+    // Simulate downloading the theme file
     alert(`Downloading theme: ${name}`);
   };
 
@@ -27,20 +28,26 @@ function Theme({ name, description }) {
     <div className="card theme">
       <h3>{name}</h3>
       <p>{description}</p>
+      <img src={exampleImage} alt="theme" className="theme-image" />
       <button className="downloadBtn" onClick={downloadTheme}>Download</button>
     </div>
   );
 }
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(prevMode => !prevMode);
+  };
+
   return (
-    <div className="App">
+    <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <header>
         <h1>ChromaCraft Fonts & Themes Store</h1>
         <p>Your one-stop destination for high-quality fonts and themes.</p>
-        
         <img src={exampleImage} alt="sample" className='example-image'/>
-
+        <button className="toggle-dark-mode" onClick={toggleDarkMode}>Mode</button>
       </header>
       <div className="container">
         <div className="products">
