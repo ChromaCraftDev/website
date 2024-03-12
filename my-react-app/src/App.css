@@ -34,12 +34,6 @@ header p {
   padding: 50px; /* Add padding to the container */
 }
 
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .card {
   width: 300px;
   padding: 20px;
@@ -70,6 +64,12 @@ header p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px; /* Add gap between cards */
+}
+
+.products h2{
+  padding: 10px;
+  margin: 0;
+  flex-basis: 100%;
 }
 
 .products:nth-child(odd) .card {
