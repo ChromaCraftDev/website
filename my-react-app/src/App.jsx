@@ -1,82 +1,61 @@
-import React, { useState } from 'react';
-import './Store/store.css'; // Import CSS file
+import React from 'react';
+import './App.css'; // Import CSS file
 
-function Product({ name, description, addToCart }) {
+function Product({ name, description }) {
+  const downloadFont = () => {
+    // Simulate downloading the font file
+    alert(`Downloading font: ${name}`);
+  };
+
   return (
     <div className="product">
       <h3>{name}</h3>
       <p>{description}</p>
-      <button onClick={() => addToCart(name)}>Add to Cart</button>
+      <button onClick={downloadFont}>Download</button>
     </div>
   );
 }
 
-function Cart({ items, checkout }) {
+function Theme({ name, description }) {
+  const downloadTheme = () => {
+    // Simulate downloading the theme file
+    alert(`Downloading theme: ${name}`);
+  };
+
   return (
-    <div className="cart">
-      <h2>Shopping Cart</h2>
-      <ul>
-        {items.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-      <button onClick={checkout}>Checkout</button>
+    <div className="product">
+      <h3>{name}</h3>
+      <p>{description}</p>
+      <button onClick={downloadTheme}>Download</button>
     </div>
   );
 }
 
 function App() {
-  const [cartItems, setCartItems] = useState([]);
-
-  const addToCart = (product) => {
-    setCartItems([...cartItems, product]);
-  };
-
-  const checkout = () => {
-    alert('Thank you for your purchase!');
-    setCartItems([]);
-  };
-
   return (
     <div className="App">
       <header>
         <h1>Font & Theme Store</h1>
       </header>
       <div className="container">
-        <div className="sidebar">
-          <div className="user-details">
-            <h2>User Details</h2>
-          </div>
-          <nav className="navigation">
-            <h2>Navigation</h2>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Fonts</a></li>
-              <li><a href="#">Themes</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
         <div className="products">
-          <Product name="Font 1" description="Description of Font 1" addToCart={addToCart} />
-          <Product name="Font 2" description="Description of Font 2" addToCart={addToCart} />
-          <Product name="Font 3" description="Description of Font 3" addToCart={addToCart} />
-          <Product name="Font 4" description="Description of Font 4" addToCart={addToCart} />
-          <Product name="Font 5" description="Description of Font 5" addToCart={addToCart} />
-          <Product name="Font 6" description="Description of Font 6" addToCart={addToCart} />
-          <Product name="Font 7" description="Description of Font 7" addToCart={addToCart} />
-          <Product name="Font 8" description="Description of Font 8" addToCart={addToCart} />
-          <Product name="Font 9" description="Description of Font 9" addToCart={addToCart} />
-          <Product name="Font 10" description="Description of Font 10" addToCart={addToCart} />
-          <Product name="Font 11" description="Description of Font 11" addToCart={addToCart} />
-          <Product name="Font 12" description="Description of Font 12" addToCart={addToCart} />
-          <Product name="Font 13" description="Description of Font 13" addToCart={addToCart} />
-          <Product name="Font 14" description="Description of Font 14" addToCart={addToCart} />
-          <Product name="Font 15" description="Description of Font 15" addToCart={addToCart} />
-          <Product name="Font 16" description="Description of Font 16" addToCart={addToCart} />
+          <Product name="Font 1" description="A classic serif font suitable for formal documents and invitations." />
+          <Product name="Font 2" description="A modern sans-serif font perfect for digital interfaces and websites." />
+          <Product name="Font 3" description="An elegant script font ideal for branding and decorative purposes." />
+          <Product name="Font 4" description="A playful display font great for attention-grabbing headlines and titles." />
+          <Product name="Font 5" description="A versatile serif font suitable for both print and digital media." />
+          <Product name="Font 6" description="A minimalist sans-serif font perfect for clean and contemporary designs." />
           {/* Add more Product components here for additional fonts */}
         </div>
-        <Cart items={cartItems} checkout={checkout} />
+        <div className="products">
+          <Theme name="Theme 1" description="A light and airy theme with pastel colors, ideal for feminine and delicate designs." />
+          <Theme name="Theme 2" description="A bold and vibrant theme with bright colors, perfect for energetic and dynamic projects." />
+          <Theme name="Theme 3" description="A sleek and modern theme with minimalist design elements, great for professional portfolios." />
+          <Theme name="Theme 4" description="A cozy and rustic theme with earthy tones, suitable for nature-inspired and organic projects." />
+          <Theme name="Theme 5" description="A futuristic theme with metallic accents, ideal for high-tech and cutting-edge designs." />
+          <Theme name="Theme 6" description="A retro-inspired theme with vintage textures, perfect for nostalgic and throwback projects." />
+          {/* Add more Theme components here for additional themes */}
+        </div>
       </div>
     </div>
   );
