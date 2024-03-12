@@ -1,3 +1,5 @@
+/* App.css */
+
 @font-face {
   font-family: 'CustomFont';
   src: url('./inter.ttf') format('truetype'); /* adjust the path and format based on your font file */
@@ -5,181 +7,43 @@
 
 body {
   font-family: 'CustomFont'; /* Use the custom font */
-}
-
-body {
-  font-family: CustomFont;
   margin: 0;
   padding: 0;
   background-color: #f8f9fa;
 }
 
 header {
-  background-color: #343a40;
+  background-color: #000000;
   color: white;
   padding: 20px;
   text-align: center;
+  padding-top: 50px; /* Add padding to the top of the header */
+  padding-bottom: 50px; /* Add padding to the bottom of the header */
+  font-size: x-large; /* Increase font size for the header */
+}
+
+header p {
+  font-size: 16px; /* Set font size for the description */
+  margin-top: 10px; /* Add margin to the top of the description */
 }
 
 .container {
   display: flex;
-  padding: 20px;
-}
-
-.sidebar {
-  flex-basis: 200px;
-  margin-right: 20px;
-}
-
-.user-details, .navigation {
-  background-color: #f8f9fa;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.user-details h2, .navigation h2 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  color: #343a40;
-}
-
-.navigation ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.navigation ul li {
-  margin-bottom: 10px;
-}
-
-.navigation ul li a {
-  text-decoration: none;
-  color: #343a40;
-  transition: color 0.3s ease;
-}
-
-.navigation ul li a:hover {
-  color: #007bff;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px; /* Add padding to the container */
 }
 
 .products {
-  flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.product {
-  width: calc(33.33% - 20px);
-  margin-right: 20px;
-  margin-bottom: 20px;
-  border: 1px solid #dee2e6;
-  border-radius: 8px;
-  background-color: white;
-  padding: 20px;
-  transition: transform 0.3s ease;
-  box-sizing: border-box;
-}
-
-.product:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.product h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  color: #343a40;
-}
-
-.product p {
-  margin-bottom: 10px;
-  color: #6c757d;
-}
-
-.cart {
-  flex-basis: 300px;
-  background-color: #f8f9fa;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.cart h2 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  color: #343a40;
-}
-
-.cart ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.cart ul li {
-  margin-bottom: 10px;
-  color: #6c757d;
-}
-
-.cart button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.cart button:hover {
-  background-color: #0056b3;
-}
-
-/* New styles for themes */
-.favorites {
-  flex-basis: 300px;
-  background-color: #f8f9fa;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.favorites h2 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  color: #343a40;
-}
-
-.favorites ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.favorites ul li {
-  margin-bottom: 10px;
-  color: #6c757d;
-}
-
-.favorites button {
-  padding: 10px 20px;
-  background-color: #28a745; /* Green color for download button */
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.favorites button:hover {
-  background-color: #218838; /* Darker green color on hover */
-}
-
-
-/* App.css */
-
-/* Common styles for both Product and Theme cards */
 .card {
   width: 300px;
   padding: 20px;
-  margin: 10px;
+  margin-bottom: 20px; /* Add margin between cards */
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -187,31 +51,43 @@ header {
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1); 
 }
 
 .card h3 {
   margin-top: 0;
   margin-bottom: 10px;
-  color: #333;
+  color: #000000;
 }
 
 .card p {
   margin-bottom: 15px;
-  color: #666;
+  color: #000000;
 }
 
-/* Styles specific to Product cards */
 .products {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px; /* Add gap between cards */
 }
 
-/* Styles specific to Theme cards */
 .products:nth-child(odd) .card {
   background-color: #f9f9f9;
+}
+
+.example-image {
+  width: 500px; 
+  height: auto; 
+  border-radius: 5%; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease; 
+  padding-top: 30px; /* Add padding to the top of the image */
+}
+
+.example-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .downloadBtn {
@@ -228,28 +104,3 @@ header {
   background-color: #0056b3;
 }
 
-/* Additional styles for the App */
-.App {
-  font-family: 'CustomFont', sans-serif;
-  background-color: #f8f9fa;
-}
-
-header {
-  background-color: #343a40;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
