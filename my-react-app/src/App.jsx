@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css'; // Import your CSS file
 import exampleImage from './Images/sample.jpg';
 import sampleFile from './DownloadFiles/sampleFile.pdf';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function Product({ name, description }) {
   const downloadFont = () => {
@@ -51,6 +53,13 @@ function App() {
         <img src={exampleImage} alt="sample" className='example-image'/>
       </header>
       <div className="container">
+      <div className="products">
+          <h2>Themes</h2>
+          <Theme name="Theme 1" description="A light and airy theme with pastel colors, ideal for feminine and delicate designs." />
+          <Theme name="Theme 2" description="A bold and vibrant theme with bright colors, perfect for energetic and dynamic projects." />
+          <Theme name="Theme 3" description="A sleek and modern theme with minimalist design elements, great for professional portfolios." />
+          {/* Add more Theme components here for additional themes */}
+        </div>
         <div className="products">
           <h2>Fonts</h2>
           <Product name="Font 1" description="A classic serif font suitable for formal documents and invitations." />
@@ -58,18 +67,11 @@ function App() {
           <Product name="Font 3" description="An elegant script font ideal for branding and decorative purposes." />
           {/* Add more Product components here for additional fonts */}
         </div>
-        <div className="products">
-          <h2>Themes</h2>
-          <Theme name="Theme 1" description="A light and airy theme with pastel colors, ideal for feminine and delicate designs." />
-          <Theme name="Theme 2" description="A bold and vibrant theme with bright colors, perfect for energetic and dynamic projects." />
-          <Theme name="Theme 3" description="A sleek and modern theme with minimalist design elements, great for professional portfolios." />
-          {/* Add more Theme components here for additional themes */}
-        </div>
       </div>
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>ChromaCraft Team</h3>
+            <h3>Team ChromaCraft</h3>
             <ul>
               <li>Thanuga rodrigo</li>
               <li>Kavindu Ashein</li>
@@ -88,9 +90,9 @@ function App() {
           <div className="footer-section">
             <h3>Follow Us</h3>
             <ul className="social-links">
-              <li><a href="https://www.facebook.com/chromacraft" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-              <li><a href="https://www.twitter.com/chromacraft" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-              <li><a href="https://www.instagram.com/chromacraft" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://www.facebook.com/chromacraft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} /></a></li>
+              <li><a href="https://www.twitter.com/chromacraft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} /></a></li>
+              <li><a href="https://www.instagram.com/chromacraft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /></a></li>
             </ul>
           </div>
         </div>
