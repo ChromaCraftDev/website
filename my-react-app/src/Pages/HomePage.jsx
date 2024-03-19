@@ -1,8 +1,10 @@
-import Navbar from "../components/Navbar"
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import React from 'react';
 import exampleImage from '../assets/Images/sample.jpg';
 import sampleFile from '../assets/DownloadFiles/sampleFile.pdf';
 import './HomePage.css';
+
 
 function Product({ name, description }) {
     const downloadFont = () => {
@@ -72,6 +74,7 @@ function HomePage(){
       </div>
       
     </div>
+    <Footer></Footer>
 </div>
     )
 }
