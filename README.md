@@ -6,6 +6,8 @@ Make sure you have Node.js installed : https://nodejs.org/en
 
 use a code editor (Ex: VsCode) and open the website folder
 
+#### Create a new terminal 
+
 Get the file directory using 
 
 ```cd my-react-app```
