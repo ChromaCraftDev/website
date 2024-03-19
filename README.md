@@ -10,4 +10,10 @@ Get the file directory using
 
 ```cd my-react-app```
 
-Then run the website using npm run dev
+Run this code (Might not be necessary) :
+
+```npm install```
+
+Then run the website using 
+
+```npm run dev```
