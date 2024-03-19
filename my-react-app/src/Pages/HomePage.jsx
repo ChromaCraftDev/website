@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar"
 import React from 'react';
 import exampleImage from '../assets/Images/sample.jpg';
 import sampleFile from '../assets/DownloadFiles/sampleFile.pdf';
+import './HomePage.css';
 
 function Product({ name, description }) {
     const downloadFont = () => {
