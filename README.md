@@ -12,7 +12,7 @@ Get the file directory using
 
 ```cd my-react-app```
 
-Run this code (Might not be necessary) :
+Run this code :
 
 ```npm install```
 
