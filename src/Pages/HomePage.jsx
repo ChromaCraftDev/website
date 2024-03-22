@@ -58,11 +58,11 @@ function HomePage(){
         <img src={exampleImage} alt="sample" className='example-image'/>
       </header>
       <div className="container">
-        <Link to="/Themes" className="themescard">
+        <Link to="/website/Themes" className="themescard">
             <h2>Themes</h2>
             {/* Add more Theme components here for additional themes */}
         </Link>
-        <Link to="/Fonts" className="fontscard">
+        <Link to="/website/Fonts" className="fontscard">
             <h2>Fonts</h2>
             {/* Other card content goes here */}
         </Link>
