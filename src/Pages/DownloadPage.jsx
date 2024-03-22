@@ -22,4 +22,3 @@ function DownloadPage() {
 }
 
 export default DownloadPage;
-<path class="st0" d="M0,0v759h980.6V0H0z M956.6,461.5h-655v-450h655V461.5z"></path>
