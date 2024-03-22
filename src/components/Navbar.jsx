@@ -10,6 +10,7 @@ export default function Navbar(){
                 <Link to="/website/"> Home</Link>
                 <Link to="/website/Fonts"> Fonts</Link>
                 <Link to="/website/Themes"> Themes</Link>
+                <Link to="/website/Download"> Download</Link>
             </li>
         </ul>
     </nav>

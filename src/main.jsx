@@ -6,6 +6,7 @@ import HomePage from './Pages/HomePage.jsx'
 import FontPage from './Pages/FontPage.jsx';
 import ThemePage from './Pages/ThemePage.jsx';
 import ErrorPage from './Pages/ErrorPage.jsx';
+import DownloadPage from './Pages/DownloadPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
     path: '/website/Themes',
     element: <ThemePage/>,
   },
+  {
+    path: '/website/Download',
+    element: <DownloadPage/>
+  }
 
 ]);
 
