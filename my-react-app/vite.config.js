@@ -5,8 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'build',git add .
-    git commit -m "commit"
-    git push
+    outDir: 'build',
   }
 })
