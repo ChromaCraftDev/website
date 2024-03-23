@@ -10,7 +10,7 @@ import './DownloadPage.css';
 function DownloadPage() {
     return (
         <div>
-            <Navbar />
+            <Navbar/>
             <header>
                 <h1>ChromaCraft for PC</h1>
                 {/* Increase the size of the logo image */}
