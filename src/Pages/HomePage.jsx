@@ -54,7 +54,7 @@ function HomePage(){
     <div className="App">
     <header>
       <h1 className="rainbow-text">ChromaCraft</h1>
-      <p>Your one-stop destination for high-quality fonts and themes.</p>
+      <p>Your one-stop destination for superior customization.</p>
       <img src={colorImage} alt="Chromacraft" className="color" style={{ width: '900px', height: 'auto' }} />
     </header>
     

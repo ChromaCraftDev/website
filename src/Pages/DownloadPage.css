@@ -1,3 +1,6 @@
+body{
+    background-color: #ffffff;
+}
 .header {
     background-color: #ffffff; /* Set the background color of the page to white */
     margin: 0; /* Remove default margin */
@@ -7,6 +10,7 @@
 .header h1{
     font-size: large;
 }
+
 .description-text {
     font-size: 1.2rem; /* Set the font size */
     font-weight: 500;

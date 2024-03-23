@@ -37,6 +37,7 @@ function QuestionSubmissionPage() {
         <div>
             <Navbar />
             <div className="question-submission-container">
+            {<h1 className="rainbow-text">  ChromaCraft  </h1>}
                 <h1>Submit Your Question</h1>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
