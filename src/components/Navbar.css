@@ -7,11 +7,12 @@
     align-items: center;
     gap: 2rem;
     padding: 0 1rem;
-    font-family: 'CustomFont';
+    font-family: inherit;
 }
 
 .site-title {
     font-size: 2rem;
+    font-weight: bold;
 }
 
 .nav ul {
@@ -20,7 +21,7 @@
     display: flex;
     gap: 1rem;
     font-size: .9rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .nav a {
