@@ -45,6 +45,18 @@ function DownloadPage() {
                 <h3 className='why?'>Why ChromaCraft ?</h3>
                 <p>ChromaCraft offers a user-friendly platform for creating personalized wallpapers and app themes, allowing users to express their unique style effortlessly. With customizable options for color schemes, patterns, and themes, ChromaCraft transforms the desktop into a vibrant reflection of individual preferences. Whether for gamers, professionals, or enthusiasts, ChromaCraft provides a seamless solution for enhancing the aesthetics of any PC setup.</p>
             </div>
+            <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <h3 class="question">Question 1: What is ChromaCraft?</h3>
+        <p class="answer">ChromaCraft is a platform for high-quality fonts and themes.</p>
+    </div>
+    <div class="faq-item">
+        <h3 class="question">Question 2: How do I download fonts from ChromaCraft?</h3>
+        <p class="answer">You can download fonts from ChromaCraft by visiting the Download page and selecting the font you want to download.</p>
+    </div>
+</div>
+
             <Footer></Footer>
         </div>
     );
