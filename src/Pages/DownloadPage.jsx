@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from '../components/Footer';
 import colorImage from '../assets/Images/colorpallatte.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import Accordion from '../components/Accordion';
 import { faWindows, faLinux, faApple } from '@fortawesome/free-brands-svg-icons';
 import './DownloadPage.css';
 
@@ -57,6 +57,7 @@ function DownloadPage() {
         <p class="answer">You can download fonts from ChromaCraft by visiting the Download page and selecting the font you want to download.</p>
     </div>
 </div>
+<Accordion />
 
             <Footer></Footer>
         </div>

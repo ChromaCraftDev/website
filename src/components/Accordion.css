@@ -1,0 +1,84 @@
+
+/* Accordion container */
+.accordion {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    margin-bottom: 10rem;
+}
+
+/* Accordion title */
+.accordion-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Accordion items */
+.accordion-items {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Accordion item */
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+}
+
+/* Accordion header */
+.accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+/* Accordion question */
+.accordion-question {
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.accordion-question:hover {
+    color: #007bff;
+}
+
+/* Accordion icon */
+.accordion-icon {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Active state of the accordion icon */
+.accordion-icon.active {
+    transform: rotate(-90deg);
+}
+
+/* Accordion content */
+.accordion-content {
+    padding: 15px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    max-height: 10vh;
+}
+
+/* Active state of the accordion content */
+.accordion-content.active {
+    max-height: 500px; /* Set a large enough value to accommodate the content */
+}
+
+/* Accordion answer */
+.accordion-answer {
+    margin: 0;
+}
