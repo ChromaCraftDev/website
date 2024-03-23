@@ -57,18 +57,7 @@ function HomePage(){
       <p>Your one-stop destination for high-quality fonts and themes.</p>
       <img src={colorImage} alt="Chromacraft" className="color" style={{ width: '900px', height: 'auto' }} />
     </header>
-
-      <div className="container">
-        <Link to="/website/Themes" className="themescard">
-            <h2>Themes</h2>
-            {/* Add more Theme components here for additional themes */}
-        </Link>
-        <Link to="/website/Fonts" className="fontscard">
-            <h2>Fonts</h2>
-            {/* Other card content goes here */}
-        </Link>
-      </div>
-      
+    
     </div>
     <Footer></Footer>
 </div>

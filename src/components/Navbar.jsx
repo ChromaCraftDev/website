@@ -8,8 +8,6 @@ export default function Navbar(){
         <ul>
             <li>
                 <Link to="/website/"> Home</Link>
-                <Link to="/website/Fonts"> Fonts</Link>
-                <Link to="/website/Themes"> Themes</Link>
                 <Link to="/website/Download"> Download</Link>
                 <Link to="/website/Ques"> Contact Us</Link>
             </li>
