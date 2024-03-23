@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import React from 'react';
-import exampleImage from '../assets/Images/sample.jpg';
+import colorImage from '../assets/Images/colorpallatte.png';
 import { Link } from 'react-router-dom';
 /*import sampleFile from '../assets/DownloadFiles/sampleFile.pdf'; */
 import './HomePage.css';
@@ -52,11 +52,12 @@ function HomePage(){
 <div>
     <Navbar></Navbar>
     <div className="App">
-      <header>
-        <h1>ChromaCraft Fonts & Themes Store</h1>
-        <p>Your one-stop destination for high-quality fonts and themes.</p>
-        <img src={exampleImage} alt="sample" className='example-image'/>
-      </header>
+    <header>
+      <h1 className="rainbow-text">ChromaCraft</h1>
+      <p>Your one-stop destination for high-quality fonts and themes.</p>
+      <img src={colorImage} alt="Chromacraft" className="color" style={{ width: '900px', height: 'auto' }} />
+    </header>
+
       <div className="container">
         <Link to="/website/Themes" className="themescard">
             <h2>Themes</h2>

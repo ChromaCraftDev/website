@@ -12,8 +12,9 @@ function DownloadPage() {
         <div>
             <Navbar/>
             <header>
-                <h1>ChromaCraft for PC</h1>
-                {/* Increase the size of the logo image */}
+                <div className='description-topic'>
+                    <h4>Download</h4>  {<h2 className="rainbow-text">  ChromaCraft  </h2> }  <h4>for your PC</h4>
+                </div>  
                 <img src={colorImage} alt="Chromacraft" className="color" style={{ width: '900px', height: 'auto' }} />
                 <p className="description-text">Your one-stop destination for high-quality fonts and themes.</p>
             </header>

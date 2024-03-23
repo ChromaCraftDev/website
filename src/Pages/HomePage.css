@@ -19,22 +19,40 @@
     text-align: center;
     padding-top: 50px; 
     padding-bottom: 50px; 
-    font-size: x-large; 
+    font-size: xxx-large; 
   }
   
   header p {
-    font-size: 16px; 
-    margin-top: 10px; 
+    font-size: 20px; 
+    margin-top: 10px;
+    font-weight: 500;
   }
 
+  .description-topic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+  }
+
+  .rainbow-text {
+    background: linear-gradient(to right,
+        red, orange, yellow, green, cyan, blue, violet,
+        indigo, darkblue, darkgreen, darkred, darkorange,
+        darkcyan, darkviolet, darkmagenta, darkslategray,
+        darkslateblue, darkolivegreen, darkgoldenrod);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
 
   .example-image {
-    width: 500px; 
+    width: 400px; 
     height: auto; 
     border-radius: 5%; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease; 
-    padding-top: 30px; 
   }
   
   .example-image:hover {

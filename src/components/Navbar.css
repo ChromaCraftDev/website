@@ -14,8 +14,8 @@
     padding: 0;
     display: flex;
     gap: 1rem;
-    font-size: 1.05rem;
-    font-weight: 900;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 .nav a {
@@ -27,8 +27,9 @@
 }
 
 .logo {
-    width: 250px;
+    width: 200px;
     height: auto;
+    margin-top: 5px;
 }
 
 .nav li :hover {
