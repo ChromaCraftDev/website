@@ -68,27 +68,7 @@ body{
 .download-link:hover {
     text-decoration: underline;
 }
-.about {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center; 
-    height: 50vh;
-    margin-bottom: 40px;
-}
 
-.about h3{
-    margin-bottom: 3rem;
-    font-size: 1.7rem;
-}
-
-.about p{
-    margin: 0 10rem 0 10rem;
-    text-align: center;
-    font-size: 17px;
-    padding: 0 5rem 0 5rem;
-    line-height: 30px;
-}
 .faq-section {
     max-width: 800px;
     margin: 0 auto;

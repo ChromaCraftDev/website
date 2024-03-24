@@ -18,7 +18,7 @@
     padding: 20px;
     text-align: center;
     padding-top: 50px; 
-    padding-bottom: 50px; 
+    padding-bottom: 0px; 
     font-size: xxx-large; 
   }
   
@@ -36,11 +36,11 @@
   }
 
   .rainbow-text {
-    background: linear-gradient(to right,
-        red, orange, yellow, green, cyan, blue, violet,
-        indigo, darkblue, darkgreen, darkred, darkorange,
-        darkcyan, darkviolet, darkmagenta, darkslategray,
-        darkslateblue, darkolivegreen, darkgoldenrod);
+    background: linear-gradient(to right, #f8d3f5, #e3b4ef, #ce96e8, #b978e2, #a55bdc);
+
+
+
+
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -132,94 +132,96 @@
     z-index: 1;
   }
    
-/*
-  .product .product-image,
-  .theme .theme-image {
-    width: 300px;
-    height: auto;
-    margin-bottom: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
+  .description-text {
+    font-size: 1.2rem; /* Set the font size */
+    font-weight: 500;
+    color: #555; /* Set the text color */
+    text-align: center; /* Center align the text */
+    margin-top: 10px; /* Add some top margin for spacing */
+}
 
-  .product:hover .product-image,
-  .theme:hover .theme-image {
-    opacity: 1;
-  }
-  
-  .products {
+.download-cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; 
-  }
-  
-  .products h2{
-    padding: 10px;
-    margin: 0;
-    flex-basis: 100%;
-  }
-  
-  .products:nth-child(odd) .card {
-    background-color: #f9f9f9;
-  }
-  
+    justify-content: space-around;
+    margin-top: 20px;
+}
 
-  
-  .downloadBtn {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .downloadBtn:hover {
-    background-color: #0056b3;
-  }
-  
-
-  
-  .dark-mode .App {
-    background-color: #000000;
-  }
-  
-  .dark-mode header {
-    background-color: #000000; 
-    color: #ffffff; 
-  }
-  
-  .dark-mode .card {
-    background-color: #000000;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .dark-mode .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .dark-mode .card h3,
-  .dark-mode .card p {
-    color: #fff; 
-  }
-  
-  .dark-mode .products:nth-child(odd) .card {
-    background-color: #000000; 
-  }
-  
-  .dark-mode .downloadBtn {
-    background-color: #007bff; 
-  }
-  .toggle-dark-mode {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: white;
-    font-family: 'CustomFont';           
+.card {
+    width: 350px;
     border-radius: 10px;
-  } 
-  */
-  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px; /* Decrease the space between cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 4em;
+    margin: 20px auto;
+    display: block;
+    color: #000000;
+}
+
+.card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: .75rem;
+}
+
+.download-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; 
+  min-height: 120vh;
+
+}
+
+.about h3{
+  margin-bottom: 1rem;
+  margin-top: 0;
+  font-size: 1.7rem;
+}
+
+.aboutp{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.aboutp p{
+  margin: 0 90px 0 0;
+  font-size: 16px;
+  padding: 0 ;
+  line-height: 30px;
+  text-align: justify;
+
+}
+
+.aboutp .themeimg{
+  width: 42rem;
+  height: auto;
+  margin: 0 20px 0 60px
+}
