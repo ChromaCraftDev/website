@@ -1,0 +1,9 @@
+.button {
+    border-radius: 50%;
+    background-color: white;
+}
+
+.button:hover {
+    color: rgb(119, 201, 255);
+
+}
