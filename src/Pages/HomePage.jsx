@@ -65,9 +65,10 @@ Experience the magic of Chromacraft today and unlock a world of endless creativi
             </div>
           </div>
         </div>
-        <div class='supported-apps'>
-          <h3 class='apps'>Supporting apps</h3>
-          <ul class='apps-list'>
+
+        <div className='supported-apps'>
+          <h3 className='apps'>Supporting apps</h3>
+          <ul>
               <li><a href="https://code.visualstudio.com/download">Vs Code</a></li>
               <li><a href="https://www.jetbrains.com/idea/download/">Intellij</a></li>
           </ul>

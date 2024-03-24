@@ -248,16 +248,40 @@ header p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: #f6f4f4;
+  padding-bottom: 20px;
+  margin-top: 20px;
 }
 
-.apps-list {
+.supported-apps h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.supported-apps ul {
   padding: 0;
 }
 
-.apps-list li {
+.supported-apps li {
   color: #000000;
   text-align: center;
-  font-size: large;
+  font-size: 24px;
   list-style-type: none;
+  font-weight: bold;
+}
+
+.supported-apps li:hover {
+  color:#ce96e8;
+}
+
+.supported-apps a {
   text-decoration: none;
+}
+
+.supported-apps a {
+  text-decoration: none;
+  color: inherit;
 }
