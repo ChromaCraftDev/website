@@ -42,6 +42,7 @@ function DownloadPage() {
                     </div>
                 </div>
             </div>
+
             <div className='about'>
                 <h3 className='why?'>Why ChromaCraft ?</h3>
                 <p>ChromaCraft offers a user-friendly platform for creating personalized wallpapers and app themes, allowing users to express their unique style effortlessly. With customizable options for color schemes, patterns, and themes, ChromaCraft transforms the desktop into a vibrant reflection of individual preferences. Whether for gamers, professionals, or enthusiasts, ChromaCraft provides a seamless solution for enhancing the aesthetics of any PC setup.</p>

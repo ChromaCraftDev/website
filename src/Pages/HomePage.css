@@ -243,4 +243,21 @@ header p {
   margin: 0 20px 0 60px
 }
 
+.supported-apps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.apps-list {
+  padding: 0;
+}
+
+.apps-list li {
+  color: #000000;
+  text-align: center;
+  font-size: large;
+  list-style-type: none;
+  text-decoration: none;
+}
