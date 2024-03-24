@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+
 import Footer from "../components/Footer";
 import React from 'react';
 import colorImage from '../assets/Images/colorpallatte.png';
@@ -6,15 +6,14 @@ import themeImage from '../assets/Images/themes.png';
 import { faWindows, faLinux, faApple } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Accordion from '../components/Accordion';
-
 import './HomePage.css';
 import QuestionSubmissionPage from "./QuestionSubmissionPage";
+import BackToTopButton from "../components/BackToTop";
 
 
 function HomePage() {
   return (
     <div>
-      <Navbar></Navbar>
       <div className="App">
         <header>
           <h1 className="rainbow-text">ChromaCraft</h1>
@@ -70,6 +69,7 @@ Experience the magic of Chromacraft today and unlock a world of endless creativi
         <Accordion/>
 
         <QuestionSubmissionPage/>
+        <BackToTopButton/>
       
       </div>
       
