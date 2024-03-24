@@ -2,6 +2,7 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 import logoImage from '../assets/Images/logoo.png';
 
+
 export default function Navbar() {
     return (
         <nav className="nav">

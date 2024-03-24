@@ -1,12 +1,14 @@
-/* QuestionSubmissionPage.css */
-body{
-    background-color: #ffffff;
-}
+
 
 .question-submission-container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding-bottom: 90px;
+    padding-top: 40px;
+}
+
+.question-submission-container h1{
+    text-align: center;
 }
 
 .form-group {

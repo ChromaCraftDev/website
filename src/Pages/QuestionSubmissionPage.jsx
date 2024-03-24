@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com'; // Import EmailJS library
-import Navbar from "../components/Navbar";
-import Footer from '../components/Footer';
-import colorImage from '../assets/Images/colorpallatte.png';
 import './QuestionSubmissionPage.css'; // Import CSS file for styling
 
 function QuestionSubmissionPage() {
@@ -34,10 +31,7 @@ function QuestionSubmissionPage() {
 
     return (
         <div>
-            <Navbar />
             <div className="question-submission-container">
-                <h1 className="rainbow-text">ChromaCraft</h1>
-                <img src={colorImage} alt="Chromacraft" className="color" style={{ width: '900px', height: 'auto' }} />
                 <h1>Submit Your Question</h1>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
@@ -57,7 +51,6 @@ function QuestionSubmissionPage() {
                 {successMessage && <p className="success-message">{successMessage}</p>}
                 {errorMessage && <p className="error-message">{errorMessage}</p>}
             </div>
-            <Footer />
         </div>
     );
 }

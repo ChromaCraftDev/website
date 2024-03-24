@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Accordion from '../components/Accordion';
 
 import './HomePage.css';
+import QuestionSubmissionPage from "./QuestionSubmissionPage";
 
 
 function HomePage() {
@@ -67,6 +68,8 @@ Experience the magic of Chromacraft today and unlock a world of endless creativi
         </div>
 
         <Accordion/>
+
+        <QuestionSubmissionPage/>
       
       </div>
       

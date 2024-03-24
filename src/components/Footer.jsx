@@ -7,11 +7,11 @@ export default function Footer(){
                 <div className="footer-section">
                     <h3>Team ChromaCraft</h3>
                     <ul>
-                    <li>Thanuga rodrigo</li>
-                    <li>Kavindu Ashein</li>
+                    <li>Thanuga Rodrigo</li>
+                    <li>Kavindu Ashain</li>
                     <li>Sandew Hiruditha</li>
                     <li>Eshan Vithanage</li>
-                    <li>Sehandu Mallawarachchi</li>
+                    <li>Sehandu Malawaraarachchi</li>
                     </ul>
                 </div>
             <div className="footer-section">
