@@ -47,7 +47,7 @@ Experience the magic of Chromacraft today and unlock a world of endless creativi
             <FontAwesomeIcon icon={faWindows} className="card-icon" />
             <div className="card-body">
               <h5 className="card-title">Windows</h5>
-              <a href="windows-download-link" className="download-link">Download for Windows</a>
+              <a href="https://drive.google.com/uc?export=download&id=1trZvnMRTLCdfEmNozlm4ywo7tSgEEcDP" className="download-link">Download for Windows</a>
             </div>
           </div>
           <div className="card">
