@@ -54,14 +54,14 @@ Experience the magic of Chromacraft today and unlock a world of endless creativi
             <FontAwesomeIcon icon={faLinux} className="card-icon" />
             <div className="card-body">
               <h5 className="card-title">Linux</h5>
-              <a href="linux-download-link" className="download-link">Download for Linux</a>
+              <a href="https://dl.patchkit.net/d/6dn28ws97jqq0sh2ta5g1/direct" className="download-link">Download for Linux</a>
             </div>
           </div>
           <div className="card">
             <FontAwesomeIcon icon={faApple} className="card-icon" />
             <div className="card-body">
               <h5 className="card-title">MacOS</h5>
-              <a href="macos-download-link" className="download-link">Download for MacOS</a>
+              <a href="#" className="download-link">Coming soon</a>
             </div>
           </div>
         </div>
@@ -71,6 +71,7 @@ Experience the magic of Chromacraft today and unlock a world of endless creativi
           <ul>
               <li><a href="https://code.visualstudio.com/download">Vs Code</a></li>
               <li><a href="https://www.jetbrains.com/idea/download/">Intellij</a></li>
+              <li><a href="https://discord.com/download/">Discord</a></li>
           </ul>
         </div>
 
